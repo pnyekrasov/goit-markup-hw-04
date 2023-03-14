@@ -20,8 +20,9 @@
   --subtle-text: #8e8f99;
   --header-border: #e7e9fc;
   --footer-text: #e7e9fc;
+  --ikon-text: #e7e9fc;
   --filter-border: #e7e9fc;
-  --project-card-border: #e7e9fc;
+  --card-border: #e7e9fc;
   --logo-fpart: #f4f4fd;
   --teem-background: #f4f4fd;
   --filter-btn-background-normal: #f4f4fd;
@@ -202,8 +203,19 @@ body {
 /**                     Hero section                 */
 
 .hero {
+  max-width: 1440px;
+  height: 600px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 188px 0;
   background-color: var(--second-backgraund);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/pict-studio/people-office.jpg);
 }
 
 .hero-title {
@@ -241,6 +253,20 @@ body {
   padding: 120px 0;
 }
 
+.possibilities-background {
+  display: flex;
+  height: 112px;
+  border-radius: 4px;
+  background-color: var(--teem-background);
+  justify-content: center;
+  align-items: center;
+}
+
+.possibilities-ikon {
+  width: 64px;
+  height: 64px;
+}
+
 /**                  Works section                  */
 
 .works {
@@ -249,6 +275,7 @@ body {
 
 .works-item {
   --carts: 3;
+  border: 1px solid var(--card-border);
 }
 
 /**                     Our Team                    */
@@ -266,9 +293,46 @@ body {
 }
 
 .team-box {
+  margin: 0 auto;
   padding: 32px 0;
+  max-width: 232px;
   text-align: center;
 }
+
+.team-text {
+  margin-bottom: 8px;
+}
+
+.social-media-list {
+  display: flex;
+  align-items: center;
+}
+
+.social-media-bg {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #31d0aa;
+}
+.social-media-ikon {
+  width: 16px;
+  height: 16px;
+  fill: var(--ikon-text);
+  outline: 1px solid red;
+}
+
+/* .header-list {
+
+  margin-left: 76px;
+  gap: 40px;
+}
+
+.header-sheet {
+  display: block;
+  padding: 24px 0;
+  font-weight: 500;
+  color: var(--sheets-normal);
+} */
 
 /**TODO                   PORTFOLIO                   */
 
@@ -318,7 +382,7 @@ body {
 
 .project-card-box {
   padding: 32px 0 32px 16px;
-  border: 1px solid var(--project-card-border);
+  border: 1px solid var(--card-border);
   border-top: none;
 }
 
