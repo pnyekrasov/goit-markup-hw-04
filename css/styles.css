@@ -361,7 +361,7 @@ body {
   border: 1px solid var(--adress-active);
 }
 
-.customers-link:is(:hover, :focus) {
+.customers-item:is(:hover, :focus) .customers-link {
   fill: var(--adress-active);
 }
 
