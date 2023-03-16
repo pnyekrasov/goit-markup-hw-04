@@ -25,7 +25,6 @@
   --footer-text: #e7e9fc;
   --filter-border: #e7e9fc;
   --card-border: #e7e9fc;
-  --card-border-active: #f4f4fd;
   --logo-fpart: #f4f4fd;
   --teem-background: #f4f4fd;
   --ikon-text: #f4f4fd;
@@ -417,8 +416,7 @@ body {
   border-top: none;
 }
 
-.project-card-item:is(:hover, :focus) .project-card-box {
-  border: 1px solid var(--card-border-active);
+.project-card-item:is(:hover, :focus) {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -450,14 +448,12 @@ body {
 }
 
 .footer-ikon-title {
-  max-width: 264px;
   margin-bottom: 16px;
   font-weight: 500;
   color: var(--hero-caption);
 }
 
 .footer-ikon-list {
-  max-width: 208px;
   gap: 16px;
 }
 
